@@ -1,4 +1,4 @@
-const CACHE_NAME = "decide4me-v3";
+const CACHE_NAME = "decide4me-v4";
 
 const APP_FILES = [
   "./",

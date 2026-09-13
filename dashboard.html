@@ -170,6 +170,82 @@
 
 
   </section>
+  <section class="panel profile-upload-panel">
+
+  <div class="upload-info">
+    <span class="eyebrow">Profile Picture</span>
+
+    <h2>Customize your profile</h2>
+
+    <p>
+      Drag and drop a picture here or choose one from your computer.
+      JPG, PNG and WebP images are supported.
+    </p>
+  </div>
+
+  <div
+    id="profileDropZone"
+    class="profile-drop-zone"
+    tabindex="0"
+  >
+
+    <img
+      id="uploadPreview"
+      class="upload-preview hidden"
+      alt="Profile picture preview"
+    >
+
+    <div id="uploadPlaceholder" class="upload-placeholder">
+
+      <span class="upload-icon">📷</span>
+
+      <strong>Drop your picture here</strong>
+
+      <small>or click to choose a file</small>
+
+    </div>
+
+    <input
+      id="profilePictureInput"
+      type="file"
+      accept="image/png,image/jpeg,image/webp"
+      hidden
+    >
+
+  </div>
+
+  <div class="upload-actions">
+
+    <button
+      id="choosePictureBtn"
+      class="button secondary"
+      type="button"
+    >
+      Choose Picture
+    </button>
+
+    <button
+      id="savePictureBtn"
+      class="button primary"
+      type="button"
+      disabled
+    >
+      Save Picture
+    </button>
+
+    <button
+      id="removePictureBtn"
+      class="button outline"
+      type="button"
+    >
+      Remove
+    </button>
+
+  </div>
+
+  <p id="pictureMessage" class="picture-message"></p>
+
+</section>
 
 
   <section class="panel dashboard-history">
