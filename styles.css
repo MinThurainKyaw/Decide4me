@@ -711,3 +711,179 @@ footer {
     text-align: left;
   }
 }
+/* ==================================
+   DECIDE4ME LOGIN / AUTHENTICATION
+================================== */
+
+.auth-panel {
+  margin-top: 28px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-heading h2 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: -0.04em;
+}
+
+.auth-heading p {
+  max-width: 540px;
+  margin: 9px auto 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.google-login-btn {
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border: 1px solid var(--line);
+  border-radius: 13px;
+
+  background: #ffffff;
+  color: var(--text);
+
+  font-weight: 700;
+  font-size: 14px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.google-login-btn:hover {
+  transform: translateY(-1px);
+  border-color: #aacdb8;
+  box-shadow: 0 8px 22px rgba(23, 107, 69, 0.08);
+}
+
+.google-g {
+  display: grid;
+  place-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background: #f3f5f4;
+
+  color: #4285f4;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin: 22px 0;
+
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.auth-form {
+  display: grid;
+  gap: 15px;
+}
+
+.auth-main-btn {
+  width: 100%;
+  min-height: 48px;
+}
+
+.forgot-btn {
+  border: none;
+  background: transparent;
+
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.auth-message {
+  margin-top: 17px;
+  padding: 12px 14px;
+
+  border-radius: 12px;
+
+  background: #eef7f2;
+  color: var(--primary);
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.auth-message.error {
+  background: #fff1f0;
+  color: #b42318;
+}
+
+.auth-security-note {
+  margin: 20px 0 0;
+
+  color: var(--muted);
+  text-align: center;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.signed-in-box {
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: #eef7f2;
+
+  text-align: center;
+}
+
+.signed-in-box p {
+  margin: 0 0 14px;
+}
+
+.dashboard-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 18px;
+
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+
+  .auth-panel {
+    margin-top: 18px;
+  }
+
+  .auth-heading {
+    text-align: left;
+  }
+
+}

@@ -10,6 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#176b45">
+
+  <link rel="manifest" href="./manifest.json">
+
+  <link rel="apple-touch-icon"
+        href="./icons/icon-192.png">
+
+  <title>Decide4me - Smart Meal Planner</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
 <body>
   <header class="topbar">
     <a class="brand" href="#" aria-label="Decide4me home">
@@ -276,6 +293,117 @@
 
   </div>
 </section>
+<section class="panel auth-panel" id="loginSection">
+
+  <div class="auth-heading">
+    <span class="eyebrow">Member Access</span>
+    <h2>Welcome to Decide4me</h2>
+
+    <p>
+      Sign in to access your personal dashboard,
+      meal history and account features.
+    </p>
+  </div>
+
+
+  <div id="signedInBox" class="signed-in-box hidden">
+    <p id="signedInText"></p>
+
+    <a href="./dashboard.html"
+       class="button primary dashboard-link">
+      Open My Dashboard →
+    </a>
+  </div>
+
+
+  <div id="loginControls">
+
+    <button
+      id="googleLoginBtn"
+      class="google-login-btn"
+      type="button"
+    >
+      <span class="google-g">G</span>
+      Continue with Google
+    </button>
+
+
+    <div class="auth-divider">
+      <span>or use a Decide4me account</span>
+    </div>
+
+
+    <form id="loginForm" class="auth-form">
+
+      <label class="field">
+        <span>Email address</span>
+
+        <input
+          id="loginEmail"
+          type="email"
+          autocomplete="email"
+          placeholder="yourname@example.com"
+          required
+        >
+      </label>
+
+
+      <label class="field">
+        <span>Password</span>
+
+        <input
+          id="loginPassword"
+          type="password"
+          autocomplete="current-password"
+          placeholder="Enter your Decide4me password"
+          required
+        >
+      </label>
+
+
+      <button
+        class="button primary auth-main-btn"
+        type="submit"
+      >
+        Login
+      </button>
+
+
+      <button
+        id="createAccountBtn"
+        class="button secondary auth-main-btn"
+        type="button"
+      >
+        Create New Account
+      </button>
+
+
+      <button
+        id="forgotPasswordBtn"
+        class="forgot-btn"
+        type="button"
+      >
+        Forgot password?
+      </button>
+
+    </form>
+
+  </div>
+
+
+  <div
+    id="authMessage"
+    class="auth-message hidden"
+    role="status"
+  ></div>
+
+
+  <p class="auth-security-note">
+    🔒 Google passwords are entered only on Google's secure
+    sign-in page. Decide4me never receives your Google password.
+  </p>
+
+</section>
   </main>
 
   <footer>
@@ -287,5 +415,6 @@
   </footer>
 
   <script src="app.js" defer></script>
+  <script type="module" src="./auth.js"></script>
 </body>
 </html>

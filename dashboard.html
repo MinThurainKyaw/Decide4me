@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Decide4me — My Dashboard
+  </title>
+
+  <meta
+    name="theme-color"
+    content="#176b45"
+  >
+
+  <link
+    rel="manifest"
+    href="./manifest.json"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./icons/icon-192.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="./dashboard.css"
+  >
+
+</head>
+
+
+<body>
+
+<header class="topbar">
+
+  <a
+    class="brand"
+    href="./index.html"
+  >
+
+    <span class="brand-icon">
+      🍽️
+    </span>
+
+    <span>
+
+      <strong>Decide4me</strong>
+
+      <small>
+        Member Dashboard
+      </small>
+
+    </span>
+
+  </a>
+
+
+  <button
+    id="logoutBtn"
+    class="button outline"
+    type="button"
+  >
+    Logout
+  </button>
+
+</header>
+
+
+<main class="dashboard-page">
+
+
+  <section class="dashboard-welcome">
+
+    <span class="eyebrow">
+      My Account
+    </span>
+
+    <h1 id="welcomeTitle">
+      Welcome
+    </h1>
+
+    <p>
+      Your personal Decide4me dashboard.
+    </p>
+
+  </section>
+
+
+  <section class="dashboard-grid">
+
+
+    <article class="panel profile-card">
+
+      <img
+        id="profilePhoto"
+        class="profile-photo"
+        src="./icons/icon-192.png"
+        alt="Profile"
+      >
+
+      <div>
+
+        <span class="dashboard-label">
+          PROFILE
+        </span>
+
+        <h2 id="profileName">
+          Loading...
+        </h2>
+
+        <p id="profileEmail"></p>
+
+        <small id="profileProvider"></small>
+
+      </div>
+
+    </article>
+
+
+    <article class="panel dashboard-stat">
+
+      <span class="dashboard-icon">
+        🕘
+      </span>
+
+      <div>
+
+        <small>Recent meal entries</small>
+
+        <strong id="historyCount">
+          0
+        </strong>
+
+      </div>
+
+    </article>
+
+
+    <article class="panel dashboard-stat">
+
+      <span class="dashboard-icon">
+        🍽️
+      </span>
+
+      <div>
+
+        <small>Food database</small>
+
+        <strong>
+          1,600
+        </strong>
+
+      </div>
+
+    </article>
+
+
+  </section>
+
+
+  <section class="panel dashboard-history">
+
+    <div class="dashboard-section-head">
+
+      <div>
+
+        <span class="eyebrow">
+          Meal History
+        </span>
+
+        <h2>
+          Recently added foods
+        </h2>
+
+      </div>
+
+
+      <button
+        id="clearHistoryBtn"
+        class="button secondary"
+        type="button"
+      >
+        Clear History
+      </button>
+
+    </div>
+
+
+    <div
+      id="dashboardHistory"
+      class="dashboard-history-list"
+    >
+    </div>
+
+  </section>
+
+
+  <section class="dashboard-actions">
+
+    <a
+      href="./index.html"
+      class="button primary dashboard-action-link"
+    >
+      🍽️ Open Meal Planner
+    </a>
+
+  </section>
+
+
+</main>
+
+
+<script
+  type="module"
+  src="./dashboard.js"
+></script>
+
+</body>
+
+</html>
